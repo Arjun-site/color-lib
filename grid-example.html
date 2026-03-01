@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            /* background-color: rgb(95, 151, 164); */
+            height: 1800px;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 200px 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 100px 100px 100px 100px-; */
+            /* justify-content: center; */
+            align-content: center;
+            align-content: stretch;
+
+
+        }
+
+        .box {
+            border-radius: 15px;
+            /* height: 300px; */
+            /* width: 200px; */
+            border: 2px black;
+            padding: 20px;
+            background-color: rgb(225, 199, 8);
+            /* parent properties */
+
+        }
+
+        .container .box:nth-child(1),
+        .container .box:nth-child(3),
+        .container .box:nth-child(6),
+        .container .box:nth-child(7),
+        .container .box:nth-child(8),
+        .container .box:nth-child(9),
+        .container .box:nth-child(10),
+        .container .box:nth-child(11),
+        .container .box:nth-child(12),
+        .container .box:nth-child(5) {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="background-color: rgb(143, 214, 13);">box1</div>
+        <div class="box" style="background-color: rgb(20, 94, 184);">box2</div>
+        <div class="box" style="background-color: rgb(133, 40, 84);">box3</div>
+        <div class="box" style="background-color: rgb(228, 176, 176);">box4</div>
+        <div class="box" style="background-color: rgb(131, 233, 21);">box5</div>
+        <div class="box" style="background-color: rgb(218, 202, 23);">box6</div>
+        <div class="box" style="background-color: rgb(12, 184, 237);">box7</div>
+        <div class="box" style="background-color: rgb(20, 224, 146);">box8</div>
+        <div class="box" style="background-color: rgb(106, 234, 15);">box9</div>
+        <div class="box" style="background-color: rgb(122, 18, 191);">box10</div>
+        <div class="box" style="background-color: rgb(239, 11, 224);">box11</div>
+        <div class="box" style="background-color: rgb(154, 231, 144);">box12</div>
+        <div class="box" style="background-color: rgb(254, 242, 11);">box13</div>
+        <div class="box" style="background-color: rgb(170, 231, 245);">box14</div>
+        <!-- <div class="box" style="background-color: rgb(12, 124, 235);">box15</div> -->
+        <!-- <div class="box" style="background-color: rgb(10, 225, 121);">box16</div> -->
+
+
+
+    </div>
+</body>
+
+</html>

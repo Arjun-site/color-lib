@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 700px;
+            display: grid;
+            grid-template-columns: 600px 1fr;
+            grid-template-areas:
+                "header header"
+                "slideshow content"
+                "footer footer";
+            background-color: rgb(218, 132, 20);
+
+        }
+
+        .header {
+            background-color: green;
+            grid-area: header;
+            padding: 20px;
+        }
+
+        .slideshow {
+            background-color: yellow;
+            grid-area: slideshow;
+            padding: 20px;
+
+        }
+
+        .content {
+            background-color: pink;
+            grid-area: content;
+            padding: 20px;
+
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-area: footer;
+            padding: 20px;
+
+        }
+
+        @media(max-width:750px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "slideshow"
+                    "content"
+                    "footer";
+                background-color: rgb(218, 132, 20);
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="slideshow"></div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
